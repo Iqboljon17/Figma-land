@@ -1,0 +1,34 @@
+.testimonal {
+    margin-bottom: 150px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        .testimonal__card-wrp {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 23px;
+            padding: 20px;
+
+            @media (max-width: 620px) {
+                display: flex;
+                flex-direction: column;                
+            }
+
+            .testimonal__card {
+                border: 1px solid #DEDEDE;
+                padding: 40px;
+                border-radius: 10px;
+                .profil__section {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

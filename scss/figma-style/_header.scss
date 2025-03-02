@@ -1,0 +1,47 @@
+header {
+    margin-bottom: 31px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 34px 20px;
+        @media (max-width: 800px) {
+            justify-content: none;
+        }
+
+        .header__navbar {
+            @media (max-width: 800px) {
+                display: none;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 31px;
+
+            ul {
+                li {
+                    a {
+                        color: var(--text-color);
+                        @include font (500, 16px, 1.2);
+
+                    }
+                }
+            }
+        }
+
+      
+
+        .header__menu-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: none;
+            img {
+                width: 100%;
+            }
+            @media (max-width: 800px) {
+                display: flex;
+            }
+        }
+    }
+}
